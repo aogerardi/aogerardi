@@ -149,19 +149,3 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   init();
   draw();
 })();
-
-// --- Dark / light mode toggle ---
-(function initTheme() {
-  const toggle = document.getElementById('themeToggle');
-  if (!toggle) return;
-
-  function applyTheme(light) {
-    document.documentElement.classList.toggle('light', light);
-    toggle.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-    localStorage.setItem('theme', light ? 'light' : 'dark');
-  }
-
-  toggle.addEventListener('click', () => {
-    applyTheme(!document.documentElement.classList.contains('light'));
-  });
-})();
