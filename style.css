@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 100%;
 }
 
@@ -260,6 +260,14 @@ img { max-width: 100%; display: block; }
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 12px;
+  opacity: 0;
+  animation: hello-in 0.6s ease forwards;
+  animation-delay: 0.7s;
+}
+
+@keyframes hello-in {
+  from { opacity: 0; transform: translateX(-18px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 .hero-text h1 {
