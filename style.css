@@ -148,7 +148,7 @@ img { max-width: 100%; display: block; }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   height: 100%;
 }
 
@@ -738,6 +738,7 @@ footer p {
    ===================== */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
+  .nav-inner { justify-content: flex-end; }
 
   .nav-links {
     position: fixed;
