@@ -789,3 +789,124 @@ footer p {
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 }
+
+/* =====================
+   LOADER
+   ===================== */
+#loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-inner span {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  letter-spacing: 6px;
+  animation: loader-pulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes loader-pulse {
+  from { opacity: 0.3; }
+  to   { opacity: 1; }
+}
+
+/* =====================
+   THEME TOGGLE
+   ===================== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.theme-toggle:hover {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+html:not(.light) .icon-sun { display: none; }
+html.light .icon-moon { display: none; }
+
+/* =====================
+   LIGHT MODE
+   ===================== */
+html.light {
+  --bg-primary:   #faf8f3;
+  --bg-secondary: #f0ece3;
+  --bg-card:      #ffffff;
+  --text-primary: #1a1a1a;
+  --text-muted:   #666666;
+  --border:       #ddd6ca;
+}
+
+html.light #navbar.scrolled {
+  background: rgba(250, 248, 243, 0.92);
+}
+
+html.light .nav-links {
+  background: rgba(250, 248, 243, 0.97);
+}
+
+html.light .hero-text h1 {
+  background: linear-gradient(135deg, #1a1a1a 40%, var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =====================
+   FOOTER (updated)
+   ===================== */
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  transition: color var(--transition);
+}
+
+.footer-badge:hover { color: var(--accent-blue); }
+
+.footer-sep { color: var(--border); }

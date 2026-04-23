@@ -1,3 +1,12 @@
+// --- Page loader ---
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  if (loader) {
+    loader.classList.add('hidden');
+    setTimeout(() => loader.remove(), 500);
+  }
+});
+
 const navbar = document.getElementById('navbar');
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -139,4 +148,20 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
   init();
   draw();
+})();
+
+// --- Dark / light mode toggle ---
+(function initTheme() {
+  const toggle = document.getElementById('themeToggle');
+  if (!toggle) return;
+
+  function applyTheme(light) {
+    document.documentElement.classList.toggle('light', light);
+    toggle.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+    localStorage.setItem('theme', light ? 'light' : 'dark');
+  }
+
+  toggle.addEventListener('click', () => {
+    applyTheme(!document.documentElement.classList.contains('light'));
+  });
 })();
