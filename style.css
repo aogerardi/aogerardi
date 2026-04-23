@@ -512,6 +512,12 @@ img { max-width: 100%; display: block; }
   border: 1px solid rgba(180, 100, 255, 0.2);
 }
 
+.writing-tag.newsletter {
+  background: rgba(80, 200, 120, 0.1);
+  color: #50c878;
+  border: 1px solid rgba(80, 200, 120, 0.2);
+}
+
 .writing-cta {
   text-align: center;
 }
