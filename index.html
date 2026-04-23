@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Gerardi — Energy Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo">AG</a>
+      <ul class="nav-links">
+        <li><a href="#hero">About</a></li>
+        <li><a href="#focus">Focus Areas</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO / ABOUT -->
+    <section id="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Hi, I'm</span>
+          <h1>Alex Gerardi</h1>
+          <p class="hero-role">Energy Management Student &amp; Aspiring Landman</p>
+          <p class="hero-bio">Student in the Robert M. Zinke Energy Management Program at the University of Oklahoma (Price College of Business), with a minor in Political Science. Member of AAPL and EMSA. Focused on land and mineral acquisition, oil &amp; gas leasing, and energy finance.</p>
+          <div class="hero-actions">
+            <a href="#focus" class="btn">My Focus Areas</a>
+            <a href="Gerardi_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="particles"></canvas>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+          <rect x="0.5" y="0.5" width="15" height="23" rx="7.5" stroke="currentColor"/>
+          <circle cx="8" cy="6" r="2" fill="currentColor"><animate attributeName="cy" values="6;16;6" dur="1.8s" repeatCount="indefinite"/></circle>
+        </svg>
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS -->
+    <section id="focus">
+      <div class="container">
+        <h2 class="section-title fade-in">Focus Areas</h2>
+        <p class="section-subtitle fade-in">The areas of the energy industry I'm building expertise in.</p>
+        <div class="projects-grid">
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>Land &amp; Mineral Acquisition</h3>
+            </div>
+            <p>Pursuing a career in land work — negotiating leases, curative title, and mineral rights acquisition. Member of AAPL, the professional association for landmen in the oil and gas industry.</p>
+            <div class="card-tags">
+              <span>AAPL Member</span><span>Title Work</span><span>Leasing</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>Energy Finance &amp; Markets</h3>
+            </div>
+            <p>Studying energy markets, commodity pricing, and the financial structures that underpin oil and gas transactions. Interested in the intersection of capital markets and energy resources.</p>
+            <div class="card-tags">
+              <span>Energy Finance</span><span>Commodities</span><span>Markets</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>Oil &amp; Gas Operations</h3>
+            </div>
+            <p>Hands-on mechanical background alongside formal energy education. Interning at Plainview Oil Company starting May 2026, focused on land and mineral acquisition in Oklahoma.</p>
+            <div class="card-tags">
+              <span>Plainview Oil Co.</span><span>Oklahoma</span><span>Upstream</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>Regulatory &amp; Policy</h3>
+            </div>
+            <p>Political Science minor with a focus on energy regulation, federal and state policy, and the legal frameworks governing land ownership, mineral rights, and resource development.</p>
+            <div class="card-tags">
+              <span>Energy Policy</span><span>Regulation</span><span>Political Science</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>Personal Finance &amp; Investing</h3>
+            </div>
+            <p>Passionate about building long-term wealth through disciplined investing and financial planning. Interested in equity markets, asset allocation, and applying energy sector knowledge to investment analysis.</p>
+            <div class="card-tags">
+              <span>Investing</span><span>Equity Markets</span><span>Wealth Building</span>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="card-header">
+              <h3>AI Fluency &amp; AI-Assisted Coding</h3>
+            </div>
+            <p>Actively developing skills in working with AI tools to build real projects — including this website, built entirely using Claude Code. Focused on leveraging AI as a practical tool for productivity, research, and problem-solving in business and energy contexts.</p>
+            <div class="card-tags">
+              <span>Claude Code</span><span>AI Tools</span><span>Prompt Engineering</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing">
+      <div class="container">
+        <h2 class="section-title fade-in">Writing</h2>
+        <p class="section-subtitle fade-in">Academic articles on energy markets, infrastructure, political theory, and history. Published on Substack.</p>
+        <div class="writing-grid">
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/spains-energy-future-nuclear-policy" target="_blank" rel="noopener">
+            <span class="writing-tag energy">Energy</span>
+            <h3>Spain's Energy Future: Nuclear Policy, EU Integration, and the Geopolitics of a Low-Carbon Transition</h3>
+            <p>Balancing Decarbonization and Security: Regional and International Implications of Spain's Nuclear Phase-Out</p>
+            <span class="writing-date">Dec 2025</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/pipeline-projects-reignited-lessons" target="_blank" rel="noopener">
+            <span class="writing-tag energy">Energy</span>
+            <h3>Pipeline Projects Reignited: Lessons in Timing, Risk, and Adaptability in America's Energy Corridors</h3>
+            <p>How Politics, Risk, and Market Shifts Shape Modern Pipeline Projects</p>
+            <span class="writing-date">Dec 2025</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/meeting-americas-growing-electricity" target="_blank" rel="noopener">
+            <span class="writing-tag energy">Energy</span>
+            <h3>Meeting America's Growing Electricity Demand: Innovation, Infrastructure, and Policy for a Stable Energy Future</h3>
+            <p>An Analysis of Demand Growth, Grid Vulnerabilities, and Strategic Pathways Forward</p>
+            <span class="writing-date">Dec 2025</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/jacques-necker-and-the-kings-finances" target="_blank" rel="noopener">
+            <span class="writing-tag history">History</span>
+            <h3>Jacques Necker and the King's Finances: How Debt, Compound Interest, and Deception Led to the Collapse of Bourbon France</h3>
+            <p>Brief exploration of Jacques Necker's critical financial report, the beginning of the end of the Ancien Régime.</p>
+            <span class="writing-date">Dec 2025</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/jerusalem-in-the-ancient-world" target="_blank" rel="noopener">
+            <span class="writing-tag history">History</span>
+            <h3>Jerusalem in the Ancient World</h3>
+            <p>Jerusalem is one of the world's oldest cities, defined by dozens of formative events shaping the city's culture, religion, and symbolic power.</p>
+            <span class="writing-date">Jan 2026</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/was-john-locke-a-liberal" target="_blank" rel="noopener">
+            <span class="writing-tag politics">Political Theory</span>
+            <h3>Was John Locke a Liberal?</h3>
+            <p>A Brief Exploration of Stable Liberty and the Limits of Early Liberal Thought</p>
+            <span class="writing-date">Feb 2026</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/benjamin-constant-modern-and-ancient" target="_blank" rel="noopener">
+            <span class="writing-tag politics">Political Theory</span>
+            <h3>Benjamin Constant: Modern &amp; Ancient Liberty</h3>
+            <p>A brief look into Constant's ideas on liberty, and how commerce changed the world</p>
+            <span class="writing-date">Feb 2026</span>
+          </a>
+
+          <a class="writing-card fade-in" href="https://alexgerardi.substack.com/p/institutional-performance-profile" target="_blank" rel="noopener">
+            <span class="writing-tag academic">Academic</span>
+            <h3>JMU: Institutional Performance Profile</h3>
+            <p>James Madison University performance profile in comparison to peer universities.</p>
+            <span class="writing-date">Mar 2026</span>
+          </a>
+
+        </div>
+        <div class="writing-cta fade-in">
+          <a href="https://alexgerardi.substack.com" target="_blank" rel="noopener" class="btn">View All on Substack</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <div class="container">
+        <h2 class="section-title fade-in">Resume</h2>
+        <p class="section-subtitle fade-in">Experience, education, and skills.</p>
+
+        <div class="resume-grid">
+          <!-- LEFT: Timeline -->
+          <div class="resume-timeline fade-in">
+            <h3>Experience</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-date">May 2026</span>
+                <strong>Land &amp; Mineral Acquisition Intern</strong>
+                <span class="timeline-company">Plainview Oil Company — Norman, OK</span>
+                <p>Upcoming internship focused on land and mineral acquisition in the Oklahoma energy market.</p>
+              </li>
+              <li>
+                <span class="timeline-date">Current</span>
+                <strong>Bartender</strong>
+                <span class="timeline-company">The Standard — Norman, OK</span>
+                <p>Customer-facing role requiring composure under pressure, strong communication, and reliable service in a high-volume environment.</p>
+              </li>
+              <li>
+                <span class="timeline-date">Previous</span>
+                <strong>Golf Operations</strong>
+                <span class="timeline-company">White Eagle Golf Club</span>
+                <p>Assisted with course operations and member-facing services.</p>
+              </li>
+              <li>
+                <span class="timeline-date">Previous</span>
+                <strong>Apprentice / Laborer</strong>
+                <span class="timeline-company">Craftsman Plumbing &amp; Woodmark Carpentry</span>
+                <p>Hands-on trade work building practical mechanical and construction skills across residential projects.</p>
+              </li>
+            </ul>
+
+            <h3 class="timeline-h3">Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-date">In Progress</span>
+                <strong>B.B.A. Energy Management</strong>
+                <span class="timeline-company">University of Oklahoma — Price College of Business</span>
+                <p>Robert M. Zinke Energy Management Program. Minor in Political Science. Member of AAPL and EMSA.</p>
+              </li>
+              <li>
+                <span class="timeline-date">Previous</span>
+                <strong>Undergraduate Studies</strong>
+                <span class="timeline-company">Iowa State University</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- RIGHT: Skills -->
+          <div class="resume-skills fade-in">
+            <h3>Skills</h3>
+
+            <div class="skill-group">
+              <h4>Industry Knowledge</h4>
+              <div class="skill-bar"><span class="skill-label">Land &amp; Mineral Acquisition</span><div class="bar"><div class="bar-fill" style="--pct: 80%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Oil &amp; Gas Leasing</span><div class="bar"><div class="bar-fill" style="--pct: 75%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Energy Finance</span><div class="bar"><div class="bar-fill" style="--pct: 78%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Title Research</span><div class="bar"><div class="bar-fill" style="--pct: 70%"></div></div></div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Professional</h4>
+              <div class="skill-bar"><span class="skill-label">Negotiation &amp; Communication</span><div class="bar"><div class="bar-fill" style="--pct: 88%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Research &amp; Analysis</span><div class="bar"><div class="bar-fill" style="--pct: 85%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Personal Finance &amp; Investing</span><div class="bar"><div class="bar-fill" style="--pct: 80%"></div></div></div>
+            </div>
+
+            <div class="skill-group">
+              <h4>Additional</h4>
+              <div class="skill-bar"><span class="skill-label">Italian (Intermediate)</span><div class="bar"><div class="bar-fill" style="--pct: 55%"></div></div></div>
+              <div class="skill-bar"><span class="skill-label">Mechanical / Trade Work</span><div class="bar"><div class="bar-fill" style="--pct: 82%"></div></div></div>
+            </div>
+
+            <a href="Gerardi_Resume.pdf" class="btn resume-dl" download>Download Full CV (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title fade-in">Contact</h2>
+        <p class="section-subtitle fade-in">Interested in connecting? Reach out.</p>
+
+        <div class="contact-wrap fade-in">
+          <div class="contact-email-cta">
+            <p>Whether you're a recruiter, fellow student, or industry professional — I'm always open to a conversation about land work, energy, or opportunities in the industry.</p>
+            <a href="mailto:alexogerardi@gmail.com" class="btn">Send Me an Email</a>
+          </div>
+
+          <div class="contact-socials">
+            <p>Or find me here:</p>
+            <div class="social-links">
+              <a href="https://alexgerardi.substack.com" target="_blank" rel="noopener" aria-label="Substack">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+                Substack
+              </a>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:alexogerardi@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Alex Gerardi &mdash; Energy Management, University of Oklahoma</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
