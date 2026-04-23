@@ -9,7 +9,7 @@ Energy Management student at the **University of Oklahoma** (Robert M. Zinke Pro
 - Oil & gas leasing, title work, and mineral rights acquisition — the business of putting land deals together
 - Energy markets, commodity pricing, and the financial structures behind upstream transactions
 - Energy policy and regulation, with a Political Science lens
-- Practical AI fluency — this profile and my [portfolio]https://aogerardi.github.io/aogerardi/ were built entirely using Claude Code
+- Practical AI fluency — this profile and my [portfolio](https://aogerardi.github.io/aogerardi/) were built entirely using Claude Code
 
 ---
 
