@@ -662,6 +662,43 @@ img { max-width: 100%; display: block; }
   margin-top: 36px;
 }
 
+.program-callout {
+  margin-top: 56px;
+  padding: 32px 36px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-teal);
+  border-radius: var(--radius);
+}
+
+.program-callout h4 {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-teal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.program-callout p {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+  line-height: 1.75;
+  max-width: 780px;
+  margin-bottom: 16px;
+}
+
+.program-link {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  transition: color var(--transition);
+}
+
+.program-link:hover { color: var(--accent-teal); }
+
 /* =====================
    CONTACT
    ===================== */
