@@ -430,21 +430,22 @@ img { max-width: 100%; display: block; }
 
 .project-card-wide {
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-left: 3px solid #c8a84b;
+  border: 1.5px solid rgba(200, 168, 75, 0.35);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.28);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .project-card-wide:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(200, 168, 75, 0.14);
+  box-shadow: 0 16px 48px rgba(200, 168, 75, 0.18);
+  border-color: rgba(200, 168, 75, 0.65);
 }
 
 .project-card-wide-inner {
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr;
   min-height: 260px;
 }
 
@@ -483,13 +484,24 @@ img { max-width: 100%; display: block; }
 }
 
 .project-card-wide .card-links a {
-  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background: rgba(200, 168, 75, 0.12);
+  border: 1.5px solid rgba(200, 168, 75, 0.5);
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-family: var(--font-heading);
   font-weight: 600;
   color: #c8a84b;
+  letter-spacing: 0.02em;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
 }
 
 .project-card-wide .card-links a:hover {
+  background: rgba(200, 168, 75, 0.22);
+  border-color: #c8a84b;
   color: #e8c86a;
 }
 
